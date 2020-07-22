@@ -12,7 +12,7 @@
 ///
 /// The most common stuffs.
 ///
-namespace muduo
+namespace webServer
 {
 
 using std::string;
@@ -118,6 +118,6 @@ inline To down_cast(From* f)                     // so we only accept pointers
   return static_cast<To>(f);
 }
 
-}  // namespace muduo
+}  // namespace webServer
 
-#endif  // MUDUO_BASE_TYPES_H
+#endif  // webServer_BASE_TYPES_H

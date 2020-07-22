@@ -6,12 +6,12 @@
 #ifndef MUDUO_BASE_TIMESTAMP_H
 #define MUDUO_BASE_TIMESTAMP_H
 
-#include "muduo/base/copyable.h"
-#include "muduo/base/Types.h"
+#include "webServer/base/copyable.h"
+#include "webServer/base/Types.h"
 
 #include <boost/operators.hpp>
 
-namespace muduo
+namespace webServer
 {
 
 ///
@@ -20,7 +20,7 @@ namespace muduo
 /// This class is immutable.
 /// It's recommended to pass it by value, since it's passed in register on x64.
 ///
-class Timestamp : public muduo::copyable,
+class Timestamp : public webServer::copyable,
                   public boost::equality_comparable<Timestamp>,
                   public boost::less_than_comparable<Timestamp>
 {
@@ -118,6 +118,6 @@ inline Timestamp addTime(Timestamp timestamp, double seconds)
   return Timestamp(timestamp.microSecondsSinceEpoch() + delta);
 }
 
-}  // namespace muduo
+}  // namespace webServer
 
 #endif  // MUDUO_BASE_TIMESTAMP_H
