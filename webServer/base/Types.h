@@ -1,5 +1,5 @@
-#ifndef MUDUO_BASE_TYPES_H
-#define MUDUO_BASE_TYPES_H
+#ifndef WEBSERVER_BASE_TYPES_H
+#define WEBSERVER_BASE_TYPES_H
 
 #include <stdint.h>
 #include <string.h>  // memset

@@ -3,8 +3,8 @@
 //
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
 
-#ifndef MUDUO_BASE_TIMESTAMP_H
-#define MUDUO_BASE_TIMESTAMP_H
+#ifndef WEBSERVER_BASE_TIMESTAMP_H
+#define WEBSERVER_BASE_TIMESTAMP_H
 
 #include "webServer/base/copyable.h"
 #include "webServer/base/Types.h"
@@ -120,4 +120,4 @@ inline Timestamp addTime(Timestamp timestamp, double seconds)
 
 }  // namespace webServer
 
-#endif  // MUDUO_BASE_TIMESTAMP_H
+#endif  // WEBSERVER_BASE_TIMESTAMP_H

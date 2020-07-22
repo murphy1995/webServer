@@ -3,7 +3,7 @@
 //
 // Author: Shuo Chen (chenshuo at chenshuo dot com)
 
-#include "muduo/base/Timestamp.h"
+#include "webServer/base/Timestamp.h"
 
 #include <sys/time.h>
 #include <stdio.h>
@@ -14,7 +14,7 @@
 
 #include <inttypes.h>
 
-using namespace muduo;
+using namespace webServer;
 
 static_assert(sizeof(Timestamp) == sizeof(int64_t),
               "Timestamp is same size as int64_t");
