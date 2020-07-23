@@ -1,0 +1,5 @@
+add_executable(Timestamp_unittest Timestamp_unittest.cc)
+target_link_libraries(Timestamp_unittest webServer_base)
+
+add_executable(Atomic_unittest Atomic_unittest.cc)
+target_link_libraries(Atomic_unittest webServer_base)

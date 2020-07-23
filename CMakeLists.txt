@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.6)
 
-project(muduo C CXX)
+project(webServer C CXX)
 
 enable_testing()
 
@@ -9,8 +9,8 @@ if(NOT CMAKE_BUILD_TYPE)
 endif()
 
 # only build examples if this is the main project
-if(CMAKE_PROJECT_NAME STREQUAL "muduo")
-  option(MUDUO_BUILD_EXAMPLES "Build Muduo examples" ON)
+if(CMAKE_PROJECT_NAME STREQUAL "webServer")
+  option(WEBSERVER_BUILD_EXAMPLES "Build WEBSERVER examples" ON)
 endif()
 
 set(CXX_FLAGS
@@ -106,7 +106,7 @@ message(STATUS "CXX_FLAGS = " ${CMAKE_CXX_FLAGS} " " ${CMAKE_CXX_FLAGS_${BUILD_T
 add_subdirectory(webServer/base)
 #add_subdirectory(webServer/net)
 
-#if(MUDUO_BUILD_EXAMPLES)
+#if(WEBSERVER_BUILD_EXAMPLES)
 #  add_subdirectory(contrib)
 #  add_subdirectory(examples)
 #else()
@@ -114,4 +114,6 @@ add_subdirectory(webServer/base)
 #    add_subdirectory(examples/cdns)
 #  endif()
 #endif()
+
+add_subdirectory(webServer/tests)
 

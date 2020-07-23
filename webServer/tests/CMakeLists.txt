@@ -1,0 +1,1 @@
+add_executable(bsa boost_assert_test.cpp)
