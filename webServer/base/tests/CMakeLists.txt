@@ -3,3 +3,24 @@ target_link_libraries(Timestamp_unittest webServer_base)
 
 add_executable(Atomic_unittest Atomic_unittest.cc)
 target_link_libraries(Atomic_unittest webServer_base)
+
+add_executable(Exception_test Exception_test.cpp)
+target_link_libraries(Exception_test webServer_base)
+
+add_executable(Thread_unittest Thread_unittest.cpp)
+target_link_libraries(Thread_unittest webServer_base)
+
+add_executable(Mutex_test Mutex_test.cc)
+target_link_libraries(Mutex_test webServer_base)
+
+add_executable(CountDownLatch_test CountDownLatch_test.cpp)
+target_link_libraries(CountDownLatch_test webServer_base)
+
+add_executable(CountDownLatch_test2 CountDownLatch_test2.cpp)
+target_link_libraries(CountDownLatch_test2 webServer_base)
+
+add_executable(BlockingQueue_test BlockingQueue_test.cpp)
+target_link_libraries(BlockingQueue_test webServer_base)
+
+add_executable(BlockingQueue_bench BlockingQueue_bench.cpp)
+target_link_libraries(BlockingQueue_bench webServer_base)

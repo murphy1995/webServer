@@ -1,1 +1,4 @@
 add_executable(bsa boost_assert_test.cpp)
+
+add_executable(pthread_atfork_test pthread_atfork_test.cpp)
+target_link_libraries(pthread_atfork_test pthread rt)

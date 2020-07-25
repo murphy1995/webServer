@@ -1,5 +1,9 @@
 set(base_SRCS
   Timestamp.cc
+  Exception.cc
+  CountDownLatch.cc
+  CurrentThread.cc
+  Thread.cc
   )
 
 add_library(webServer_base ${base_SRCS})
